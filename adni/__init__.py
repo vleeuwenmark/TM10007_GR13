@@ -1,11 +1,11 @@
-import load_data
-import hdf5_to_csv
+import load_data as ld
 
-input_directory = 'adni/ADNI_radiomicFeatures.csv'
+input_directory = 'adni/'
 
 
 def main():
-    data = load_data(input_directory)
+    data = ld.load_data()
+    print(data)
 
 
 if __name__ == "__main__":
